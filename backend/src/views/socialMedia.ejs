@@ -50,6 +50,7 @@
   
   <!-- MONO CSS -->
   <link id="main-css-href" rel="stylesheet" href="assets/css/style.css" />
+  <link id="main-css-href" rel="stylesheet" href="assets/css/style2.css" />
   
 
   
@@ -107,6 +108,102 @@
         ——— CONTENT WRAPPER
         ===================================== -->
         <div class="content-wrapper">
+
+            <div class="content container-fluid">
+                <div class="page-header">
+                <h1 class="page-header-title">
+                <span class="page-header-icon">
+                <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/social.png" class="w--26" alt="Social">
+                </span>
+                <span>
+                Social media Links
+                </span>
+                </h1>
+                </div>
+                <div class="card">
+                <div class="card-body">
+                <form>
+                <input type="hidden" name="_token" value="D8qDvu1gDO9okELEGijHRWLtbhg71ADy2ToEZpnk" autocomplete="off"> <div class="row g-3">
+                <div class="col-sm-6">
+                <label for="name" class="form-label">Name</label>
+                <select class="form-control" name="name" id="name" required="">
+                <option value="zero">---Select---</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="pinterest">Pinterest</option>
+                </select>
+                </div>
+                <div class="col-sm-6">
+                <input type="hidden" id="id">
+                <label for="link" class="form-label ">Social media link</label>
+                <input type="text" name="link" class="form-control" id="link" placeholder="Enter Social Media Link" required="">
+                </div>
+                <input type="hidden" id="id">
+                </div>
+                <div class="btn--container justify-content-end mt-3">
+                <button type="reset" class="btn btn--reset" id="reset">Reset</button>
+                <button id="add" class="btn btn--primary">Submit</button>
+                <a id="update" class="btn btn--primary" style="display: none; ">Update</a>
+                </div>
+                </form>
+                </div>
+                </div>
+                <div class="card mt-3">
+                <div class="card-body p-0">
+                <div class="table-responsive">
+                <table class="table table-borderless mb-0" id="dataTable" width="100%" cellspacing="0">
+                <thead class="thead-light">
+                <tr>
+                <th>Sl</th>
+                <th>Name</th>
+                <th>Link</th>
+                <th>Status</th>
+                <th class="text-center">Action</th>
+                </tr>
+                </thead>
+                <tbody><tr><td class="column_name" data-column_name="sl" data-id="5">1</td><td class="column_name" data-column_name="name" data-id="5">twitter</td><td class="column_name" data-column_name="slug" data-id="5">https://twitter.com/6amTech</td><td class="column_name" data-column_name="status" data-id="5">
+                                                <label class="toggle-switch toggle-switch-sm">
+                                                    <input type="checkbox" class="toggle-switch-input status" id="5" checked="">
+                                                    <span class="toggle-switch-label">
+                                                        <span class="toggle-switch-indicator"></span>
+                                                    </span>
+                                                </label>
+                                            </td><td><a type="button" class="action-btn edit mx-auto" id="5"><i class="tio-edit"></i></a> </td></tr><tr><td class="column_name" data-column_name="sl" data-id="4">2</td><td class="column_name" data-column_name="name" data-id="4">instagram</td><td class="column_name" data-column_name="slug" data-id="4">https://www.instagram.com/</td><td class="column_name" data-column_name="status" data-id="4">
+                                                <label class="toggle-switch toggle-switch-sm">
+                                                    <input type="checkbox" class="toggle-switch-input status" id="4" checked="">
+                                                    <span class="toggle-switch-label">
+                                                        <span class="toggle-switch-indicator"></span>
+                                                    </span>
+                                                </label>
+                                            </td><td><a type="button" class="action-btn edit mx-auto" id="4"><i class="tio-edit"></i></a> </td></tr><tr><td class="column_name" data-column_name="sl" data-id="3">3</td><td class="column_name" data-column_name="name" data-id="3">linkedin</td><td class="column_name" data-column_name="slug" data-id="3">https://www.linkedin.com/</td><td class="column_name" data-column_name="status" data-id="3">
+                                                <label class="toggle-switch toggle-switch-sm">
+                                                    <input type="checkbox" class="toggle-switch-input status" id="3" checked="">
+                                                    <span class="toggle-switch-label">
+                                                        <span class="toggle-switch-indicator"></span>
+                                                    </span>
+                                                </label>
+                                            </td><td><a type="button" class="action-btn edit mx-auto" id="3"><i class="tio-edit"></i></a> </td></tr><tr><td class="column_name" data-column_name="sl" data-id="2">4</td><td class="column_name" data-column_name="name" data-id="2">pinterest</td><td class="column_name" data-column_name="slug" data-id="2">https://www.pinterest.com/login/</td><td class="column_name" data-column_name="status" data-id="2">
+                                                <label class="toggle-switch toggle-switch-sm">
+                                                    <input type="checkbox" class="toggle-switch-input status" id="2" checked="">
+                                                    <span class="toggle-switch-label">
+                                                        <span class="toggle-switch-indicator"></span>
+                                                    </span>
+                                                </label>
+                                            </td><td><a type="button" class="action-btn edit mx-auto" id="2"><i class="tio-edit"></i></a> </td></tr><tr><td class="column_name" data-column_name="sl" data-id="1">5</td><td class="column_name" data-column_name="name" data-id="1">facebook</td><td class="column_name" data-column_name="slug" data-id="1">https://www.facebook.com/</td><td class="column_name" data-column_name="status" data-id="1">
+                                                <label class="toggle-switch toggle-switch-sm">
+                                                    <input type="checkbox" class="toggle-switch-input status" id="1" checked="">
+                                                    <span class="toggle-switch-label">
+                                                        <span class="toggle-switch-indicator"></span>
+                                                    </span>
+                                                </label>
+                                            </td><td><a type="button" class="action-btn edit mx-auto" id="1"><i class="tio-edit"></i></a> </td></tr></tbody>
+                </table>
+                </div>
+                </div>
+                </div>
+                </div>
 
 
             

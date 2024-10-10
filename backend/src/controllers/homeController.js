@@ -225,3 +225,39 @@ exports.addNewEmployeeFunction = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+exports.businessSetupFunction = async (req, res) => {
+  try {
+    res.render('businessSetup');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.addNewFunction = async (req, res) => {
+  try {
+    res.render('addNew');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.listFunction = async (req, res) => {
+  try {
+    res.render('list');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.pageSetupFunction = async (req, res) => {
+  try {
+    res.render('pageSetup');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.socialMediaFunction = async (req, res) => {
+  try {
+    res.render('socialMedia');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

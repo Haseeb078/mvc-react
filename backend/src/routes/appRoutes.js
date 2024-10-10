@@ -33,6 +33,14 @@ router.get('/deliveryManReviews', homeController.deliveryManReviewsFunction);
 router.get('/employeeRoleSetup', homeController.employeeRoleSetupFunction);
 router.get('/employeeList', homeController.employeeListFunction);
 router.get('/addNewEmployee', homeController.addNewEmployeeFunction);
+router.get('/businessSetup', homeController.businessSetupFunction);
+router.get('/addNew', homeController.addNewFunction);
+router.get('/list', homeController.listFunction);
+router.get('/pageSetup', homeController.pageSetupFunction);
+router.get('/socialMedia', homeController.socialMediaFunction);
+
+
+
 
 
 

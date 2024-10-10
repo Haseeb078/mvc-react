@@ -50,6 +50,7 @@
   
   <!-- MONO CSS -->
   <link id="main-css-href" rel="stylesheet" href="assets/css/style.css" />
+  <link id="main-css-href" rel="stylesheet" href="assets/css/style2.css" />
   
 
   
@@ -107,6 +108,114 @@
         ——— CONTENT WRAPPER
         ===================================== -->
         <div class="content-wrapper">
+
+            <div class="content container-fluid">
+                <div class="page-header">
+                <h1 class="page-header-title">
+                <span class="page-header-icon">
+                <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/add_branch.png" class="w--20" alt="Branch">
+                </span>
+                <span>
+                Branch List <span class="badge badge-soft-secondary">5</span>
+                </span>
+                </h1>
+                </div>
+                <div class="row g-3">
+                <div class="col-sm-12">
+                <div class="card">
+                <div class="card-header border-0">
+                <div class="card--header">
+                <h5 class="card-header-title"></h5>
+                <form action="https://grofresh-admin.6amtech.com/admin/branch/list" method="GET">
+                <div class="input-group">
+                <input id="datatableSearch_" type="search" name="search" class="form-control" placeholder="Search by Name" aria-label="Search" value="" required="" autocomplete="off">
+                <div class="input-group-append">
+                <button type="submit" class="input-group-text">
+                Search
+                </button>
+                </div>
+                </div>
+                </form>
+                </div>
+                </div>
+                <div class="table-responsive datatable-custom">
+                <table id="columnSearchDatatable" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table" data-hs-datatables-options="{
+                                                 &quot;order&quot;: [],
+                                                 &quot;orderCellsTop&quot;: true
+                                               }">
+                <thead class="thead-light">
+                <tr>
+                <th class="border-0">SL</th>
+                <th class="border-0">Branch name</th>
+                <th class="border-0">Branch type</th>
+                <th class="border-0">Contact info</th>
+                <th class="border-0">Delivery Charge Type</th>
+                <th class="border-0">Status</th>
+                <th class="border-0 text-center">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>1</td>
+                <td>
+                <div class="short-media">
+                <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/160x160/2.png">
+                <div class="text-cont">
+                <span class="d-block font-size-sm text-body text-trim-50">
+                Farmgate
+                </span>
+                </div>
+                </div>
+                </td>
+                <td>
+                <span>Sub Branch </span>
+                </td>
+                <td>
+                <h5 class="m-0">
+                <a href="mailto:parvej@gmail.com">parvej@gmail.com</a>
+                </h5>
+                <div>
+                <a href="Tel:"></a>
+                </div>
+                </td>
+                <td>
+                <span class="badge badge-soft-success"> fixed </span>
+                </td>
+                <td>
+                <label class="toggle-switch">
+                <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox13" data-route="https://grofresh-admin.6amtech.com/admin/branch/status/13/0" data-message="You want to disable this branch" checked="">
+                <span class="toggle-switch-label text">
+                <span class="toggle-switch-indicator"></span>
+                </span>
+                </label>
+                </td>
+                <td>
+                <div class="btn--container justify-content-center">
+                <a class="action-btn" target="_blank" href="https://grofresh-admin.6amtech.com/admin/business-settings/store/delivery-fee-setup">
+                <i class="tio-settings"></i>
+                </a>
+                <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/branch/edit/13"><i class="tio-edit"></i>
+                </a>
+                <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="branch-13" data-message="Want to delete this">
+                <i class="tio-delete-outlined"></i>
+                </a>
+                </div>
+                <form action="https://grofresh-admin.6amtech.com/admin/branch/delete/13" method="post" id="branch-13">
+                <input type="hidden" name="_token" value="O4RddGyp6Kw14fKWyZ7Nkh3TMxLXOhYjEc2VDIpZ" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+                </td>
+                </tr>
+              
+                </tbody>
+                </table>
+                <table>
+                <tfoot>
+                </tfoot>
+                </table>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
 
 
             
