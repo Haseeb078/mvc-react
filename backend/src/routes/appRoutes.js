@@ -38,6 +38,7 @@ router.get('/addNew', homeController.addNewFunction);
 router.get('/list', homeController.listFunction);
 router.get('/pageSetup', homeController.pageSetupFunction);
 router.get('/socialMedia', homeController.socialMediaFunction);
+router.get('/systemSetup', homeController.systemSetupFunction);
 
 
 

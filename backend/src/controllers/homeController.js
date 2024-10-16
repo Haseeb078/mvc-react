@@ -261,3 +261,11 @@ exports.socialMediaFunction = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+exports.systemSetupFunction = async (req, res) => {
+  try {
+    res.render('systemSetup');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
